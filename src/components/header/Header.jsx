@@ -5,7 +5,7 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container">
-        <Link to="/" className='text-bolder text-dark text-decoration-none me-2'><h4>VISION Store <small className='text-warning'>| Backoffice </small></h4></Link>
+        <Link to="/" className='text-bolder text-dark text-decoration-none me-2'><h4>VISION Store <small className='text-danger'>| Backoffice </small></h4></Link>
         <div>
           <button
             className="navbar-toggler"
