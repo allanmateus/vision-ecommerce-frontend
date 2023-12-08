@@ -1,7 +1,6 @@
 import React from "react";
 import grupoPessoas from "../../assets/img/grupo-pessoas.jpg"
 
-
 function Inicial() {
   return (
     <div className="container">

@@ -23,9 +23,6 @@ function Header() {
               <Link to="/" className="nav-link active" aria-current="page">
                 Página inicial
               </Link>
-              <Link to="/cadastro" className="nav-link active">
-                Cadastro
-              </Link>
               <Link to="/catalogo" className="nav-link active">
                 Catálogo
               </Link>
