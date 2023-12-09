@@ -11,18 +11,15 @@ function Catalogo() {
     price: 0
   }
   
-  const [btnCadastrar, setBtnCadastrar] = useState(true);
   const [objProduct, setObjProduct] = useState(product); 
   const [products, setProducts] = useState([]);
   
   const selecionarProduto = (indice) =>{
     setObjProduct(products[indice]);
-    setBtnCadastrar(false);
   }
 
   const limparFormulario = () =>{
     setObjProduct(product);
-    setBtnCadastrar(true);
   }
   //Cadastrar produto
   const cadastrar = (e) =>{
@@ -94,7 +91,7 @@ function Catalogo() {
             <h4 className='mb-3'>Catálogo de produtos</h4> 
           </div>
         </div>
-        <Form  botao={btnCadastrar} eventoTeclado={onType} cadastrar={cadastrar} obj={objProduct} />
+        <Form  eventoTeclado={onType} cadastrar={cadastrar} obj={objProduct} />
         <Table vetor={products} selecionar={selecionarProduto} remover={remover}/>
       </div>
     </div>

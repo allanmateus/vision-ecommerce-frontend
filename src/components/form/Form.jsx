@@ -33,15 +33,9 @@ function Form({botao, eventoTeclado, obj, cadastrar}) {
           </div>
         </div>
         <div className='row mt-2'>
-          {
-            botao
-            ?
-            <div className='col'>
-              <button type="submit" onClick={cadastrar}  value="cadastrar" className="btn btn-success float-end">Cadastrar</button>
-            </div>
-            :
-            <div></div>  
-          }
+          <div className='col'>
+            <button type="submit" onClick={cadastrar}  value="cadastrar" className="btn btn-success float-end">Cadastrar</button>
+          </div>
         </div>
     </form>
   )
